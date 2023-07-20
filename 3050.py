@@ -1,4 +1,5 @@
 #3050
+# TIME LIMIT, mas a tendência é estar certo
 n = int(input())
 predios = list(map(int,input().split()))
 
