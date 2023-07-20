@@ -5,9 +5,9 @@ predios = list(map(int,input().split()))
 
 aux = 0
 
-for i in range(n): # pos da list
-    for j in range(n): 
-        cont = predios[i] + predios[j] + abs(i - j)
+for i in range(n-1): # pos da list
+    for j in predios[i:]: 
+        cont = predios[i] + j + abs(i - predios.index(j)+1)
         if cont > aux:
             aux = cont
         
